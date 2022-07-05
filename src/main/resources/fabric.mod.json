@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "playerspoofer",
+  "version": "${version}",
+
+  "name": "Player Spoofer",
+  "description": "Lets you change the name and skin of players on the client",
+  "authors": [
+    "Gaider10"
+  ],
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "me.andrew.playerspoofer.PlayerSpooferMod"
+    ]
+  },
+  "mixins": [
+    "playerspoofer.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.19.x",
+    "java": ">=17"
+  }
+}
